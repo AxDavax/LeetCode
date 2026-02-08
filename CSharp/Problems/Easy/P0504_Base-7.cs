@@ -24,7 +24,7 @@ using System.Text;
 
 namespace LeetCode.CSharp.Problems.Easy;
 
-public class P0504_Base_7
+public static class P0504_Base_7
 {
     #region Solution
 
