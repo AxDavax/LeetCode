@@ -30,14 +30,7 @@ namespace LeetCode.CSharp.Problems.Easy;
 
 public static class P0367_Valid_Perfect_Square
 {
-    /// <summary>
-    /// Complexité temporelle : O(1)
-    /// Complexité spatialle : O(1)
-    /// </summary>
-    public static bool IsPerfectSquare(int num)
-    {
-        return double.IsInteger(Math.Sqrt(num));
-    }
+    #region Optimal Solution
 
     /// <summary>
     /// Complexité temporelle : O(1)
@@ -49,10 +42,26 @@ public static class P0367_Valid_Perfect_Square
         return root * root == num;
     }
 
+    #endregion
+
+    #region Alternative Solution
+
+    /// <summary>
+    /// Complexité temporelle : O(1)
+    /// Complexité spatialle : O(1)
+    /// </summary>
+    public static bool IsPerfectSquare(int num) => double.IsInteger(Math.Sqrt(num));
+
+    #endregion
+
+    #region Test
+    
     public static void Test()
     {
         int numb = 80;
         Console.WriteLine($"Is {numb} a valid perfect square : {IsPerfectSquareO1(numb)}");
         Console.Read();
     }
+
+    #endregion
 }
