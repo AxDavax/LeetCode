@@ -38,6 +38,8 @@ namespace LeetCode.CSharp.Problems.Easy;
 
 public static class P0168_Excel_Sheet_Column_Title
 {
+    #region Solution
+    
     /// <summary>
     /// Complexité temporelle : O(log(n))
     /// Complexité spatialle : O(log(n))
@@ -56,10 +58,16 @@ public static class P0168_Excel_Sheet_Column_Title
         return new string(title.ToArray());
     }
 
+    #endregion
+
+    #region Test
+
     public static void Test()
     {
         int colNumb = 701;
         Console.WriteLine($"The columnNumber {colNumb} is titled : {ConvertToTitle(colNumb)}");
         Console.Read();
     }
+
+    #endregion
 }
