@@ -1,6 +1,7 @@
 ﻿using LeetCode.CSharp.Problems.Easy;
 
 namespace LeetCode.CSharp;
+
 public class Program
 {
     public static void Main(string[] args)
