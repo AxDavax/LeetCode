@@ -27,6 +27,41 @@ namespace LeetCode.CSharp.Problems.Easy;
 
 public static class P0067_Add_Binary
 {
+    #region Optimal Solution
+
+    /// <summary>
+    /// Complexité temporelle : O(max(m,n))
+    /// Complexité spatialle : O(max(m,n))
+    /// </summary>
+    public static string AddBinaryOptimized(string a, string b)
+    {
+        StringBuilder res = new StringBuilder();
+        int i = a.Length - 1, j = b.Length - 1, ret = 0, sum = 0;
+
+        while (i >= 0 || j >= 0 || ret > 0)
+        {
+            sum = ret;
+
+            if (i >= 0) sum += a[i--] - '0';
+
+            if (j >= 0) sum += b[j--] - '0';
+
+            // Ajouter le bit à la fin  
+            // beaucoup plus rapide que d'insérer à l'index 0 à chaque fois
+            res.Append(sum % 2);
+            ret = sum / 2;
+        }
+
+        // Inverser la chaîne une seule fois à la fin
+        char[] charArray = res.ToString().ToCharArray();
+        Array.Reverse(charArray);
+        return new string(charArray);
+    }
+
+    #endregion
+
+    #region Alternative Solution
+
     /// <summary>
     /// Complexité temporelle : O(max(m,n))
     /// Complexité spatialle : O(max(m,n))
@@ -53,38 +88,16 @@ public static class P0067_Add_Binary
         return res.ToString();
     }
 
-    /// <summary>
-    /// Complexité temporelle : O(max(m,n))
-    /// Complexité spatialle : O(max(m,n))
-    /// </summary>
-    public static string AddBinaryOptimized(string a, string b)
-    {
-        StringBuilder res = new StringBuilder();
-        int i = a.Length - 1, j = b.Length - 1, ret = 0, sum = 0;
+    #endregion
 
-        while (i >= 0 || j >= 0 || ret > 0)
-        {
-            sum = ret;
-
-            if (i >= 0) sum += a[i--] - '0';
-
-            if (j >= 0) sum += b[j++] - '0';
-
-            // Ajouter le bit à la fin
-            res.Append(sum % 2);
-            ret = sum / 2;
-        }
-
-        // Inverser la chaîne une seule fois à la fin
-        char[] charArray = res.ToString().ToCharArray();
-        Array.Reverse(charArray);
-        return new string(charArray);
-    }
+    #region Test
 
     public static void Test()
     {
         string a = "1010", b = "1011";
-        Console.WriteLine($"{a} + {b} = {AddBinaryBit(a, b)} in bits"); 
+        Console.WriteLine($"{a} + {b} = {AddBinaryOptimized(a, b)} in bits"); 
         Console.Read();
     }
+
+    #endregion
 }
