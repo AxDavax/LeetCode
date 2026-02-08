@@ -59,7 +59,7 @@ public static class P0136_Single_Number
 
     #endregion
 
-    #region Alternatives Solution
+    #region Alternatives Solutions
 
     /// <summary>
     /// Complexité temporelle : O(n)
