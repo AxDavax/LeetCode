@@ -32,11 +32,28 @@ namespace LeetCode.CSharp.Problems.Easy;
 
 public static class P0258_Add_Digits
 {
+    #region Optimal Solution
+
+    /// <summary>
+    /// Complexité temporelle : O(1)
+    /// Complexité spatialle : O(1)
+    /// </summary>
+    public static int AddDigits_Math(int num)
+    {
+        if (num == 0) return 0;
+
+        return 1 + (num - 1) % 9;
+    }
+
+    #endregion
+
+    #region Alternative Solution
+
     /// <summary>
     /// Complexité temporelle : O(log(n))
     /// Complexité spatialle : O(1)
     /// </summary>
-    public static int AddDigitsLoops(int num)
+    public static int AddDigits_Iterative(int num)
     {
 
         int n = num;
@@ -57,21 +74,16 @@ public static class P0258_Add_Digits
         return n;
     }
 
-    /// <summary>
-    /// Complexité temporelle : O(1)
-    /// Complexité spatialle : O(1)
-    /// </summary>
-    public static int AddDigits(int num)
-    {
-        if (num == 0) return 0;
+    #endregion
 
-        return 1 + (num - 1) % 9;
-    }
-
+    #region Test
+    
     public static void Test()
     {
         int numb = 38;
-        Console.WriteLine($"Adding digits of {numb} until one digit : {AddDigits(numb)} remains !");
+        Console.WriteLine($"Adding digits of {numb} until one digit : {AddDigits_Math(numb)} remains !");
         Console.Read();
     }
+
+    #endregion
 }
