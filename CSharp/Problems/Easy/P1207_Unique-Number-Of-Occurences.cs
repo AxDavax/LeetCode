@@ -31,6 +31,29 @@ namespace LeetCore.CSharp.Problems.Easy;
 
 public static class P1207_Unique_Number_Of_Occurences
 {
+    #region Optimized Solution
+
+    /// <summary>
+    /// Complexité temporelle : O(n)
+    /// Complexité spatialle : O(u)
+    /// </summary>
+    public static bool UniqueOccurLinq(int[] arr)
+    {
+        var dict = arr.GroupBy(elem => elem)
+                      .ToDictionary(group => group.Key, group => group.Count());
+
+        var counter = new HashSet<int>();
+
+        foreach (var count in dict.Values)
+            if (!counter.Add(count)) return false;
+
+        return true;
+    }
+
+    #endregion
+    
+    #region Alternative Solution
+
     /// <summary>
     /// Complexité temporelle : O(n)
     /// Complexité spatialle : O(u)
@@ -58,22 +81,9 @@ public static class P1207_Unique_Number_Of_Occurences
         return true;
     }
 
-    /// <summary>
-    /// Complexité temporelle : O(n)
-    /// Complexité spatialle : O(u)
-    /// </summary>
-    public static bool UniqueOccurLinq(int[] arr)
-    {
-        var dict = arr.GroupBy(elem => elem)
-                      .ToDictionary(group => group.Key, group => group.Count());
+    #endregion
 
-        var counter = new HashSet<int>();
-
-        foreach (var count in dict.Values)
-            if (!counter.Add(count)) return false;
-
-        return true;
-    }
+    #region Test
 
     public static void Test()
     {
@@ -82,6 +92,8 @@ public static class P1207_Unique_Number_Of_Occurences
         string showArray = "{" + string.Join(",", nums) + "}";
 
         Console.WriteLine($"Does the array nums = {showArray}, " +
-            $"has unique number of occurences : {UniqueOccur(nums)}");
+            $"has unique number of occurences : {UniqueOccurLinq(nums)}");
     }
+
+    #endregion
 }
