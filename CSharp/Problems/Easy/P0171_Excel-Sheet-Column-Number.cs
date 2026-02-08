@@ -44,19 +44,7 @@ namespace LeetCode.CSharp.Problems.Easy;
 
 public static class P0171_Excel_Sheet_Column_Number
 {
-    /// <summary>
-    /// Complexité temporelle : O(n)
-    /// Complexité spatialle : O(1)
-    /// </summary>
-    public static int TitleToNumberPow(string columnTitle)
-    {
-        int max = columnTitle.Length - 1, sum = 0;
-
-        for (int i = 0; i <= max; i++)
-            sum += (columnTitle[i] - 'A' + 1) * (int)Math.Pow(26, max - i);
-
-        return sum;
-    }
+    #region Optimal Solution
 
     /// <summary>
     /// Complexité temporelle : O(n)
@@ -75,6 +63,28 @@ public static class P0171_Excel_Sheet_Column_Number
         return ans;
     }
 
+    #endregion
+
+    #region Alternative Solution
+
+    /// <summary>
+    /// Complexité temporelle : O(n)
+    /// Complexité spatialle : O(1)
+    /// </summary>
+    public static int TitleToNumberPow(string columnTitle)
+    {
+        int max = columnTitle.Length - 1, sum = 0;
+
+        for (int i = 0; i <= max; i++)
+            sum += (columnTitle[i] - 'A' + 1) * (int)Math.Pow(26, max - i);
+
+        return sum;
+    }
+
+    #endregion
+
+    #region Test
+
     public static void Test()
     {
         // Console.WriteLine(TitleToNumber("A")); // 1
@@ -86,4 +96,6 @@ public static class P0171_Excel_Sheet_Column_Number
                           $"{TitleToNumber(columnExcel)} th column");
         Console.Read();
     }
+
+    #endregion
 }
