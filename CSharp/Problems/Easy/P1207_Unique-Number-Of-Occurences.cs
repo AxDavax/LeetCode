@@ -27,7 +27,7 @@
     - 1000 <= arr[i] <= 1000
 */
 
-namespace LeetCore.CSharp.Problems.Easy;
+namespace LeetCode.CSharp.Problems.Easy;
 
 public static class P1207_Unique_Number_Of_Occurences
 {
