@@ -39,8 +39,8 @@ public static class P0231_Power_of_Two
     #region Optimal Solution
 
     /// <summary>
-    /// Complexité temporelle : O(1)
-    /// Complexité spatialle : O(1)
+    /// Time Complexity : O(1)
+    /// Spatial Complexity : O(1)
     /// </summary>
     public static bool IsPowerOfTwo_Bit(int n) => n > 0 && (n & (n - 1)) == 0;
 
@@ -49,8 +49,8 @@ public static class P0231_Power_of_Two
     #region Alternative Solution
 
     /// <summary>
-    /// Complexité temporelle : O(1)
-    /// Complexité spatialle : O(1)
+    /// Time Complexity : O(1)
+    /// Spatial Complexity : O(1)
     /// </summary>
     public static bool IsPowerOfTwo(int n) => double.IsInteger(Math.Log2(n));
 
