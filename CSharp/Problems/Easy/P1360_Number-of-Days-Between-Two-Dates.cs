@@ -125,8 +125,7 @@ public static class P1360_Number_of_Days_Between_Two_Dates
 
     public static void Print(string date1, string date2)
     {
-        Console.WriteLine($"The number of days between {date1} and {date2} is " +
-                $"{DaysBetweenDateTimes(date1, date2)}");
+        Console.WriteLine($"The number of days between {date1} and {date2} is {DaysBetweenDateTimes(date1, date2)}");
     }
 
     #endregion
