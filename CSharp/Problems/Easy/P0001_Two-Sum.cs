@@ -70,8 +70,8 @@ public static class P0001_Two_Sum
     #region Alternative Solution
 
     /// <summary>
-    /// Complexité temporelle : O(n^2)
-    /// Complexité spatialle : O(1)
+    /// Time Complexity : O(n^2)
+    /// Spatial Complexity : O(1)
     /// </summary>
     public static (int x, int y)? TwoSum_nestedLoops(int[] nums, int target)
     {
