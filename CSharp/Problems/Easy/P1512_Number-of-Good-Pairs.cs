@@ -1,5 +1,4 @@
 ﻿/*
-    
     1512. Number of Good Pairs
 
     Given an array of integers nums, return the number of good pairs.
