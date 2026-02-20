@@ -30,29 +30,29 @@ public static class P0067_Add_Binary
     #region Optimal Solution
 
     /// <summary>
-    /// Complexité temporelle : O(max(m,n))
-    /// Complexité spatialle : O(max(m,n))
+    /// Time Complexity : O(max(m,n))
+    /// Spatial Complexity : O(max(m,n))
     /// </summary>
     public static string AddBinaryOptimized(string a, string b)
     {
         StringBuilder res = new StringBuilder();
-        int i = a.Length - 1, j = b.Length - 1, ret = 0, sum = 0;
+        int i = a.Length - 1, j = b.Length - 1, ret = 0;
 
         while (i >= 0 || j >= 0 || ret > 0)
         {
-            sum = ret;
+            int sum = ret;
 
             if (i >= 0) sum += a[i--] - '0';
 
             if (j >= 0) sum += b[j--] - '0';
 
-            // Ajouter le bit à la fin  
-            // beaucoup plus rapide que d'insérer à l'index 0 à chaque fois
+            // Append the bit to the end  
+            // much faster than inserting at index 0 every time
             res.Append(sum % 2);
             ret = sum / 2;
         }
 
-        // Inverser la chaîne une seule fois à la fin
+        // Reverse the string once at the end of the process
         char[] charArray = res.ToString().ToCharArray();
         Array.Reverse(charArray);
         return new string(charArray);
@@ -63,17 +63,17 @@ public static class P0067_Add_Binary
     #region Alternative Solution
 
     /// <summary>
-    /// Complexité temporelle : O(max(m,n))
-    /// Complexité spatialle : O(max(m,n))
+    /// Time Complexity : O(max(m,n))
+    /// Spatial Complexity : O(max(m,n))
     /// </summary>
     public static string AddBinaryBit(string a, string b)
     {
         StringBuilder res = new StringBuilder();
-        int i = a.Length - 1, j = b.Length - 1, ret = 0, sum = 0;
+        int i = a.Length - 1, j = b.Length - 1, ret = 0;
 
         while (i >= 0 || j >= 0 || ret > 0)
         {
-            sum = ret;
+            int sum = ret;
 
             if (i >= 0) 
                 sum += a[i--] - '0';

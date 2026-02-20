@@ -57,8 +57,8 @@ public static class P1512_Number_of_Good_Pairs
     #region Alternative Solutions
 
     /// <summary>
-    /// Complexité temporelle : O(N) 
-    /// Complexité spatialle : O(N)
+    /// Time Complexity : O(N) 
+    /// Spatial Complexity : O(N)
     /// </summary>
     public static int NumIdenticalPairs_dict(int[] nums)
     {
@@ -80,8 +80,8 @@ public static class P1512_Number_of_Good_Pairs
     }
 
     /// <summary>
-    /// Complexité temporelle : O(N^2) 
-    /// Complexité spatialle : O(1)
+    /// Time Complexity : O(N^2) 
+    /// Spatial Complexity : O(1)
     /// </summary>
     public static int NumIdenticalPairs_nestedLoops(int[] nums)
     {

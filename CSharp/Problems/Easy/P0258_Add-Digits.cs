@@ -35,8 +35,8 @@ public static class P0258_Add_Digits
     #region Optimal Solution
 
     /// <summary>
-    /// Complexité temporelle : O(1)
-    /// Complexité spatialle : O(1)
+    /// Time Complexity : O(1)
+    /// Spatial Complexity : O(1)
     /// </summary>
     public static int AddDigits_Math(int num)
     {
@@ -50,8 +50,8 @@ public static class P0258_Add_Digits
     #region Alternative Solution
 
     /// <summary>
-    /// Complexité temporelle : O(log(n))
-    /// Complexité spatialle : O(1)
+    /// Time Complexity : O(log(n))
+    /// Spatial Complexity : O(1)
     /// </summary>
     public static int AddDigits_Iterative(int num)
     {

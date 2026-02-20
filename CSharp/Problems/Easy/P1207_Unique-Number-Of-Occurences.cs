@@ -31,11 +31,11 @@ namespace LeetCode.CSharp.Problems.Easy;
 
 public static class P1207_Unique_Number_Of_Occurences
 {
-    #region Optimized Solution
+    #region Optimal Solution
 
     /// <summary>
-    /// Complexité temporelle : O(n)
-    /// Complexité spatialle : O(u)
+    /// Time complexity : O(n)
+    /// Spatial complexity : O(u)
     /// </summary>
     public static bool UniqueOccurLinq(int[] arr)
     {
@@ -51,12 +51,12 @@ public static class P1207_Unique_Number_Of_Occurences
     }
 
     #endregion
-    
+
     #region Alternative Solution
 
     /// <summary>
-    /// Complexité temporelle : O(n)
-    /// Complexité spatialle : O(u)
+    /// Time complexity : O(n)
+    /// Spatial complexity : O(u)
     /// </summary>
     public static bool UniqueOccur(int[] arr)
     {

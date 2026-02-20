@@ -75,8 +75,8 @@ public static class P0268_Missing_Number
     #region Alternative Solution
 
     /// <summary>
-    /// Complexité temporelle : O(n)
-    /// Complexité spatialle : O(n)
+    /// Time Complexity : O(n)
+    /// Spatial Complexity : O(n)
     /// </summary>
     public static int MissingNumber_HashSet(int[] nums)
     {

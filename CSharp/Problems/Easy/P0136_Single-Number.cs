@@ -41,10 +41,10 @@ public static class P0136_Single_Number
     #region Optimal Solution
 
     /// <summary>
-    /// Complexité temporelle : O(n)
-    /// Complexité spatialle : O(1)
-    /// L'opérateur XOR (^) est utilisé pour trouver le nombre unique dans le tableau.
-    /// n XOR n = 0 pour tout nombre n, et n XOR 0 = n. 
+    /// Time Complexity : O(n)
+    /// Spatial Complexity : O(1)
+    /// The XOR operator (^) is used to find the unique number in the array.
+    /// n XOR n = 0 for any number n, and n XOR 0 = n. 
     /// </summary>
     public static int SingleNumber_Bits(int[] nums)
     {
@@ -59,11 +59,11 @@ public static class P0136_Single_Number
 
     #endregion
 
-    #region Alternatives Solutions
+    #region Alternative Solutions
 
     /// <summary>
-    /// Complexité temporelle : O(n)
-    /// Complexité spatialle : O(n)
+    /// Time Complexity : O(n)
+    /// Spatial Complexity : O(n)
     /// </summary>
     public static int SingleNumber_HashSet(int[] nums)
     {
@@ -77,8 +77,8 @@ public static class P0136_Single_Number
     }
 
     /// <summary>
-    /// Complexité temporelle : O(n^2)
-    /// Complexité spatialle : O(n)
+    /// Time Complexity : O(n^2)
+    /// Spatial Complexity : O(n)
     /// </summary>
     public static int SingleNumber_List(int[] nums)
     {

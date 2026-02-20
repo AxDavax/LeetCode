@@ -39,10 +39,10 @@ namespace LeetCode.CSharp.Problems.Easy;
 public static class P0168_Excel_Sheet_Column_Title
 {
     #region Solution
-    
+
     /// <summary>
-    /// Complexité temporelle : O(log(n))
-    /// Complexité spatialle : O(log(n))
+    /// Time Complexity : O(log(n))
+    /// Spatial Complexity : O(log(n))
     /// </summary>
     public static string ConvertToTitle(int columnNumber)
     {

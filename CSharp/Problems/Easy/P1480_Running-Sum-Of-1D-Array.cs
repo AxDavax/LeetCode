@@ -37,8 +37,8 @@ public static class P1480_Running_Sum_Of_1D_Array
     #region Optimal Solution
 
     /// <summary>
-    /// Complexité temporelle : O(n)
-    /// Complexité spatialle : O(1)
+    /// Time complexity : O(n)
+    /// Spatial complexity : O(1)
     /// </summary>
     public static int[] RunningSum_O1(int[] nums)
     {
@@ -53,8 +53,8 @@ public static class P1480_Running_Sum_Of_1D_Array
     #region Alternative Solution
 
     /// <summary>
-    /// Complexité temporelle : O(n)
-    /// Complexité spatialle : O(n)
+    /// Time complexity : O(n)
+    /// Spatial complexity : O(n)
     /// </summary>
     public static int[] RunningSum_On(int[] nums)
     {

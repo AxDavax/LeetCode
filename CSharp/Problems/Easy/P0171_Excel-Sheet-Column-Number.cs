@@ -47,8 +47,8 @@ public static class P0171_Excel_Sheet_Column_Number
     #region Optimal Solution
 
     /// <summary>
-    /// Complexité temporelle : O(n)
-    /// Complexité spatialle : O(1)
+    /// Time Complexity : O(n)
+    /// Spatial Complexity : O(1)
     /// </summary>
     public static int TitleToNumber(string columnTitle)
     {
@@ -68,8 +68,8 @@ public static class P0171_Excel_Sheet_Column_Number
     #region Alternative Solution
 
     /// <summary>
-    /// Complexité temporelle : O(n)
-    /// Complexité spatialle : O(1)
+    /// Time Complexity : O(n)
+    /// Spatial Complexity : O(1)
     /// </summary>
     public static int TitleToNumberPow(string columnTitle)
     {

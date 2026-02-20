@@ -29,8 +29,8 @@ public static class P0504_Base_7
     #region Solution
 
     /// <summary>
-    /// Complexité temporelle : O(log7(n))
-    /// Complexité spatialle : O(log7(n))
+    /// Time complexity : O(log7(n))
+    /// Spatial complexity : O(log7(n))
     /// </summary>
     public static string ConvertToBase7(int num)
     {

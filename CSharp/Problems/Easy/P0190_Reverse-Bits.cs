@@ -35,19 +35,19 @@ public static class P0190_Reverse_Bits
     #region Optimal Solution
 
     /// <summary>
-    /// Complexité temporelle : O(1)
-    /// Complexité spatialle : O(1)
+    /// Time Complexity : O(1)
+    /// Spatial Complexity : O(1)
     /// </summary>
     public static int ReverseBits_Bitwise(int n)
     {
         int res = 0;
 
-        // Nous traitons exactement 32 bits
+        // We process exactly 32 bits
         for (int i = 0; i < 32; i++)
         {
-            res <<= 1;         // Décale le résultat pour faire de la place
-            res |= (n & 1);    // Ajoute le bit de poids faible de n à res
-            n >>= 1;           // Passe au bit suivant 
+            res <<= 1;         // Left-shift the result to make room for the next bits
+            res |= (n & 1);    // Add the least significant bit of n to res
+            n >>= 1;           // Move to the next bit
         }
 
         return res;
@@ -58,8 +58,8 @@ public static class P0190_Reverse_Bits
     #region Alternative Solution
 
     /// <summary>
-    /// Complexité temporelle : O(1)
-    /// Complexité spatialle : O(1)
+    /// Time Complexity : O(1)
+    /// Spatial Complexity : O(1)
     /// </summary>
     public static int ReverseBits_Pow(int n)
     {

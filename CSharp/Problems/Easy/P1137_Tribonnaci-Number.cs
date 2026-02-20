@@ -32,8 +32,8 @@ public static class P1137_Tribonnaci_Number
     #region Optimal Solution
 
     /// <summary>
-    /// Complexité temporelle : O(n)
-    /// Complexité spatialle : O(1)
+    /// Time complexity : O(n)
+    /// Spatial complexity : O(1)
     /// </summary>
     public static int Tribonacci_Iterative(int n)
     {
@@ -58,8 +58,8 @@ public static class P1137_Tribonnaci_Number
     #region Alternative Solution
 
     /// <summary>
-    /// Complexité temporelle : O(n)
-    /// Complexité spatialle : O(n)
+    /// Time complexity : O(n)
+    /// Spatial complexity : O(n)
     /// <summary> 
     public static int Tribonacci_Array(int n)
     {

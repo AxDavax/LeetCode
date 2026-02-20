@@ -39,8 +39,8 @@ public static class P0326_Power_of_Three
     #region Optimal Solution
 
     /// <summary>
-    /// Complexité temporelle : O(1)
-    /// Complexité spatialle : O(1)
+    /// Time Complexity : O(1)
+    /// Spatial Complexity : O(1)
     /// </summary>
     public static bool IsPowerOfThree_Optimal(int n)
     {
@@ -50,11 +50,11 @@ public static class P0326_Power_of_Three
 
     #endregion
 
-    #region Alternatives Solution
+    #region Alternative Solutions
 
     /// <summary>
-    /// Complexité temporelle : O(log3(n))
-    /// Complexité spatialle : O(1)
+    /// Time Complexity : O(log3(n))
+    /// Spatial Complexity : O(1)
     /// </summary>
     public static bool IsPowerOfThree_Iterative(int n)
     {
@@ -67,13 +67,13 @@ public static class P0326_Power_of_Three
     }
 
     /// <summary>
-    /// Complexité temporelle : O(1)
-    /// Complexité spatialle : O(1)
+    /// Time Complexity : O(1)
+    /// Spatial Complexity : O(1)
     /// </summary>
     public static bool IsPowerOfThree_Log(int n)
     {
-        // pas parfaite pour les nombres négatifs et zéro, 
-        // mais elle est rapide pour les autres cas
+        // Not perfect for negative numbers and zero, 
+        // but fast for other cases
         return double.IsInteger(Math.Log(n, 3));
     }
 

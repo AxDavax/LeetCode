@@ -40,8 +40,8 @@ public static class P0509_Fibonnaci_Number
     #region Optimal Solution
 
     /// <summary>
-    /// Complexité temporelle : O(n)
-    /// Complexité spatialle : O(1)
+    /// Time complexity : O(n)
+    /// Spatial complexity : O(1)
     /// </summary>
     public static int Fib_Iterative(int n)
     {
@@ -61,11 +61,11 @@ public static class P0509_Fibonnaci_Number
 
     #endregion
 
-    #region Alternatives Solution
+    #region Alternative Solutions
 
     /// <summary>
-    /// Complexité temporelle : O(n)
-    /// Complexité spatialle : O(n)
+    /// Time complexity : O(n)
+    /// Spatial complexity : O(n)
     /// </summary>
     public static int Fib_Array(int n)
     {
@@ -81,10 +81,10 @@ public static class P0509_Fibonnaci_Number
 
         return fib[n];
     }
-    
+
     /// <summary>
-    /// Complexité temporelle : O(2^n)
-    /// Complexité spatialle : O(n)
+    /// Time complexity : O(2^n)
+    /// Spatial complexity : O(n)
     /// </summary>
     public static int Fib_Recursive(int n)
     {

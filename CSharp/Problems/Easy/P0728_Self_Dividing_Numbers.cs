@@ -33,10 +33,10 @@ public static class P0728_Self_Dividing_Numbers
     #region Solution
 
     /// <summary>
-    /// Complexité temporelle : O(n * d) 
-    /// Complexité spatialle : O(n)
-    /// où n est la taille de l'intervalle [left, right] 
-    /// d est le nombre de chiffres dans le nombre le plus grand de l'intervalle
+    /// Time complexity : O(n * d) 
+    /// Spatial complexity : O(n)
+    /// where n is the size of the range [left, right]
+    /// d is the number of digits in the largest number within the range
     /// </summary>
     public static IList<int> SelfDividingNumbers(int left, int right)
     {

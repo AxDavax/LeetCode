@@ -33,8 +33,8 @@ public static class P0367_Valid_Perfect_Square
     #region Optimal Solution
 
     /// <summary>
-    /// Complexité temporelle : O(1)
-    /// Complexité spatialle : O(1)
+    /// Time complexity : O(1)
+    /// Spatial complexity : O(1)
     /// </summary>
     public static bool IsPerfectSquareO1(int num)
     {
@@ -47,8 +47,8 @@ public static class P0367_Valid_Perfect_Square
     #region Alternative Solution
 
     /// <summary>
-    /// Complexité temporelle : O(1)
-    /// Complexité spatialle : O(1)
+    /// Time complexity : O(1)
+    /// Spatial complexity : O(1)
     /// </summary>
     public static bool IsPerfectSquare(int num) => double.IsInteger(Math.Sqrt(num));
 
