@@ -110,7 +110,6 @@ public static class P0500_Keyboard_Row
                 if (letterMappings[(char)(word[i] | 0x20)] != row)
                     goto exit;
 
-
             results.Add(word);
             exit: { }
         }
