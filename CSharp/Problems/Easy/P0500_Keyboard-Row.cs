@@ -112,7 +112,7 @@ public static class P0500_Keyboard_Row
 
 
             results.Add(word);
-        exit: { }
+            exit: { }
         }
 
         return results.ToArray();
